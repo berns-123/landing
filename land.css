@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('rocket.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: "Bebas Neue", serif;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.champion {
+    position: absolute;
+    left: 777px;
+    height: 370px;
+    z-index: 10;
+}
+
+.furia {
+    position: absolute;
+    left: 670px;
+    height: 590px; 
+}
+
+header {
+    position: fixed; /* Mudei para fixed */
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente */
+    z-index: 100; /* Para garantir que fique acima de outros elementos */
+}
+
+.header-title {
+    flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    font-size: 19px; /* Tamanho da fonte, ajuste conforme necessário */
+}
+
+.caixa-preta {
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+    padding: 30px; /* Ajustando o espaçamento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); /* Sombra */
+    max-width: 450px; /* Largura máxima ajustada */
+    margin: 10px 0 20px 20px; /* Margem: superior, direita, inferior, esquerda */
+    position: absolute; /* Posicionamento absoluto */
+    top: 100px; /* Ajuste este valor para subir a caixa */
+    left: 60px; /* Ajuste para mover para a direita, se necessário */
+    height: 500px;
+}
+.caixa-preta p {
+    font-size: 20px; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha para melhorar a legibilidade */
+    margin-bottom: 10px; /* Espaço entre parágrafos */
+}
+
+.caixa-preta h2 {
+    margin-bottom: 10px;
+}
+
